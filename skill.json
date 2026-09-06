@@ -1,0 +1,36 @@
+{
+  "name": "genpark-calendar-timeblock-conflict-arbitrator-skill",
+  "version": "1.0.0",
+  "description": "GenPark AI Agent Skill - Multi-timezone calendar event overlap resolver finding optimal focused deep-work blocks and negotiating buffer windows.",
+  "homepage": "https://genpark.ai/mcp",
+  "author": "genpark",
+  "category": "service",
+  "tags": [
+    "cron-calendar",
+    "reclaim-ai",
+    "time-blocking",
+    "scheduling",
+    "deep-work"
+  ],
+  "inputs": {
+    "proposed_start_iso": {
+      "type": "string"
+    },
+    "duration_minutes": {
+      "type": "integer"
+    }
+  },
+  "outputs": {
+    "arbitration_id": {
+      "type": "string"
+    },
+    "conflict_detected": {
+      "type": "boolean"
+    },
+    "timezone_overlap_grade": {
+      "type": "string"
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
